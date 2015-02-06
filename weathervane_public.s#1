@@ -2557,8 +2557,6 @@ Source: www.kingbright.com</description>
 <part name="J3" library="adafruit" deviceset="1X2" device="-3.5MM"/>
 <part name="R11" library="DIYPCB" deviceset="R" device="207/7" value="820k"/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
-<part name="R12" library="DIYPCB" deviceset="R" device="207/7"/>
-<part name="P+10" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2626,8 +2624,6 @@ Source: www.kingbright.com</description>
 <instance part="J3" gate="G$1" x="279.4" y="50.8" rot="R180"/>
 <instance part="R11" gate="G$1" x="246.38" y="58.42" rot="R90"/>
 <instance part="P+9" gate="VCC" x="246.38" y="68.58"/>
-<instance part="R12" gate="G$1" x="127" y="132.08" rot="R90"/>
-<instance part="P+10" gate="VCC" x="127" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -2640,12 +2636,8 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC6(/RESET)"/>
-<wire x1="132.08" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
 <label x="116.84" y="121.92" size="1.778" layer="95"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="127" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="127" y1="127" x2="127" y2="121.92" width="0.1524" layer="91"/>
-<junction x="127" y="121.92"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -2739,11 +2731,6 @@ Source: www.kingbright.com</description>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 <wire x1="246.38" y1="66.04" x2="246.38" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<pinref part="P+10" gate="VCC" pin="VCC"/>
-<wire x1="127" y1="142.24" x2="127" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
